@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css?h=d498a955620fdd40c12830f01891c2ac">
     <link rel="stylesheet" href="assets/css/untitled.css?h=9148010b69017ed3cd8203be1cccd7d5">
     <link rel="stylesheet" href="assets/css/Bold-BS4-Footer-Big-Logo.css?h=34e92c590aff51991d6f9cad97424295">
+    <link rel="stylesheet" href="assets/css/Carousel-Hero.css?h=867af4914592897c67ca25c34d998078">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -37,6 +38,38 @@
               </div>
           </nav>
       </div>
+      <div class="carousel slide" data-ride="carousel" id="carousel-1">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="jumbotron hero-nature carousel-hero" text-align="center">
+                    <h1 class="hero-title" style="color: #ffffff;">Industrie 4.0</h1>
+                    <p class="hero-subtitle" style="color: #000000;">Be part of the future</p>
+                    <p id="learnbt"><a class="btn btn-primary btn-lg flex-grow-1 flex-shrink-1 visible hero-button" role="button" href="#imgindustry" style="background-color: rgb(86,198,198);border-color: rgb(86,198,198);">Learn more</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="jumbotron hero-photography carousel-hero">
+                    <h2 class="hero-title" style="color: #ffffff;">DemoFabrik</h2>
+                    <p class="hero-subtitle" style="color: #ffffff;">The real factory simulation</p>
+                    <p id="learnbt2"><a class="btn btn-primary btn-lg hero-button" role="button" style="background-color: rgb(86,198,198);border-color: rgb(86,198,198);" href="#imgdemofb">Learn more</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="jumbotron hero-technology carousel-hero">
+                    <h3 class="hero-title" style="color: #ffffff;">OPC UA&nbsp;</h3>
+                    <p class="hero-subtitle" style="color: #ffffff;">The definition of future connectivity</p>
+                    <p id="learnbt3"><a class="btn btn-primary btn-lg hero-button" role="button" href="#imgopcua" style="background-color: rgb(86,198,198);border-color: rgb(86,198,198);">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><i class="fa fa-chevron-right"></i><span class="sr-only">Next</span></a></div>
+        <ol
+            class="carousel-indicators">
+            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-1" data-slide-to="1"></li>
+            <li data-target="#carousel-1" data-slide-to="2"></li>
+            </ol>
+    </div>
 
     <div id="div-icon">
         <div class="container" style="padding-top: 15px;">
