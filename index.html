@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css?h=d498a955620fdd40c12830f01891c2ac">
+    <link rel="stylesheet" href="assets/css/untitled.css?h=9148010b69017ed3cd8203be1cccd7d5">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-Footer-Big-Logo.css?h=34e92c590aff51991d6f9cad97424295">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -18,6 +21,22 @@
 </head>
 
 <body id="body" style="padding: 0px">
+
+  <div>
+          <nav class="navbar navbar-light navbar-expand-md navigation-clean-button bg-light collapse navbar-collapse">
+              <div class="container"><a class="navbar-brand" href="#">MJR DemoFabrik</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                  <div class="collapse navbar-collapse"
+                      id="navcol-1">
+                      <ul class="nav navbar-nav mr-auto">
+                          <li class="nav-item" role="presentation"><a class="nav-link" style="font-size: 18px;color: rgb(55,67,77);" data-target="#modalQuiz" data-toggle="modal" href="#">Quiz</a></li>
+                          <li class="nav-item" role="presentation"><a class="nav-link" id="kontakt" style="font-size: 18px;color: rgb(55,67,77);" data-toggle="modal" data-target="#myModal">Kontakt</a></li>
+                      </ul><a id="login" class="nav-link" data-target="#modalLogin" data-toggle="modal" style="font-size: 18px;color: rgb(55,67,77);">Sign in</a><span class="navbar-text actions" style="margin-top: 5px;"> <a class="btn btn-light action-button" role="button" href="#" id="signupbtn" style="font-size: 18px;padding-top: 4px;padding-bottom: 4px;margin-top: -5px;" data-target="#modalLogin" data-toggle="modal">Sign up</a></span>
+                      <a
+                          id="logout" class="nav-link" style="font-size: 18px;color: rgb(187,14,14);visibility: hidden;" href="#" data-toggle="modal" data-target="#logout-modal">Sign out</a>
+                  </div>
+              </div>
+          </nav>
+      </div>
 
     <div id="div-icon">
         <div class="container" style="padding-top: 15px;">
@@ -111,6 +130,21 @@
                 </div>
             </div>
         </div>
+    <footer id="myFooter" class="container-fluid">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-3 social-networks"><a href="https://de-de.facebook.com/mjraber.de/" class="facebook" target="blank"><i class="fab fa-facebook visible"></i></a><a href="http://www.mjraber.de/index.php/de/" class="google" target="blank"><i class="fa fa-home visible"></i></a>
+                    <a
+                        href="https://de.linkedin.com/company/consulting---projectmanagement---software-engineering" class="linkedin" target="blank"><i class="fab fa-linkedin visible"></i></a><a href="https://www.xing.com/companies/dipl.-ing.michaelj.raber/employees" class="xing" target="blank"><i class="fab fa-xing-square visible"></i></a><button class="btn btn-primary" type="button"
+                            style="margin-top: 20px;vertical-align: middle;font-size: 20px;width: 120px;border-color: #d84b6b;" data-target="#myModal" data-toggle="modal">Contact us</button></div>
+            </div>
+            <div class="row footer-copyright">
+                <div class="col">
+                    <p>© 2018 MJR GmbH ~ Designed By <a href="#">JMY</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </section>
     <script src="assets/js/jquery.min.js?h=1dd785e1de9a32e236b624ae268bb803"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js?h=2394c9ffd5558f411ffdc3326e9a8962"></script>
