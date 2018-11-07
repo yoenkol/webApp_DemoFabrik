@@ -89,6 +89,14 @@ currentQuestionNo++;
   $("#continue_btn").hide();
   $("#answer_commit_btn").show();
 });
+function selectAnswer(id) {
+  $(id).addClass("btn-primary");
+  $(id).removeClass("btn-default");
+}
+function deselectAnswer(id) {
+  $(id).addClass("btn-default");
+  $(id).removeClass("btn-primary");  
+}
 
 function showEnd() {
   $("#question").fadeOut(function() {
