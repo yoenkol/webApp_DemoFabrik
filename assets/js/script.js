@@ -1,6 +1,5 @@
 var turn=0;
 
-
 $(function() {
   //Hauptfunktion
 });
@@ -14,11 +13,11 @@ $(".start").click(function() {
 });
 
 function startQuiz() {
-  points = 0;
-  currentQuestionNo = 0;
+  points = 0;  
+  currentQuestionNo = 0; 
   showNextQuestion();
   $("#question").fadeIn(()=>{document.getElementById("question").removeAttribute("hidden");});
-
+    
   $("#continue_btn").hide();
 }
 
@@ -56,10 +55,10 @@ $("#answer_commit_btn").click(function() {
 
 $(".restart").click(function() {
   $(".quiz_end").fadeOut(function() { 
-    startQuiz();
-    document.getElementById("answer_commit_btn").removeAttribute("display");
-  });  
+    startQuiz();  
+  });
 });
+
 function validateAnswer() {
   $("#answer_commit_btn").hide();
   var rightAnswer = getRightAnswer();
@@ -78,21 +77,22 @@ function validateAnswer() {
   $("#continue_btn").show();
 }
 
-
 $("#continue_btn").click(function() {
 if(currentQuestionNo==9){
     showEnd();
     currentQuestionNo--;
-}
+} 
 currentQuestionNo++;
-  showNextQuestion();
+  showNextQuestion();  
   $("#continue_btn").hide();
   $("#answer_commit_btn").show();
 });
+
 function selectAnswer(id) {
   $(id).addClass("btn-primary");
   $(id).removeClass("btn-default");
 }
+
 function deselectAnswer(id) {
   $(id).addClass("btn-default");
   $(id).removeClass("btn-primary");  
@@ -103,11 +103,12 @@ function showEnd() {
     $("#endpoints").text(points);
     $("#possiblepoints").text(rightAnswerPoints * questions.length);
     $(".quiz_end").fadeIn(()=>{document.getElementById("over").removeAttribute("hidden");});
-    turn=turn+1;
-    console.log("Turns:" + turn);
-  });
+    turn=turn+1;  
+    console.log("Turns:" + turn);  
+  });  
 }
 
 $('#modalQuiz').on('hidden.bs.modal', '.modal', function () {
     $(this).removeData('bs.modal');
 });
+
