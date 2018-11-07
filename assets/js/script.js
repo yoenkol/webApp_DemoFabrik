@@ -58,10 +58,25 @@ $(".restart").click(function() {
   $(".quiz_end").fadeOut(function() { 
     startQuiz();
     document.getElementById("answer_commit_btn").removeAttribute("display");
-  });
-
-   
+  });  
 });
+function validateAnswer() {
+  $("#answer_commit_btn").hide();
+  var rightAnswer = getRightAnswer();
+  var selectedAnswerId = $(".answer.btn-primary").attr("id");
+  var selectedAnswer = $(".answer.btn-primary").text()[0]; 
+  if (selectedAnswer == rightAnswer) {
+    $(".answer.btn-primary").removeClass("btn-primary");
+    $(".answer.btn-default").removeClass("btn-default");
+    $("#"+selectedAnswerId).addClass("btn-success");
+    points += rightAnswerPoints;
+  } else {
+    $(".answer.btn-primary").removeClass("btn-primary");
+    $(".answer.btn-default").removeClass("btn-default");
+    $("#"+selectedAnswerId).addClass("btn-danger");
+  }
+  $("#continue_btn").show();
+}
 
 
 $("#continue_btn").click(function() {
