@@ -8,9 +8,9 @@ $(function() {
 $(".start").click(function() {
   console.log( "Start" );
   $(".quiz_start").fadeOut(function() {
-    startQuiz();  
+    startQuiz();
 });
-   
+
 });
 
 function startQuiz() {
@@ -55,16 +55,16 @@ $("#answer_commit_btn").click(function() {
 });
 
 $(".restart").click(function() {
-  $(".quiz_end").fadeOut(function() { 
+  $(".quiz_end").fadeOut(function() {
     startQuiz();
     document.getElementById("answer_commit_btn").removeAttribute("display");
-  });  
+  });
 });
 function validateAnswer() {
   $("#answer_commit_btn").hide();
   var rightAnswer = getRightAnswer();
   var selectedAnswerId = $(".answer.btn-primary").attr("id");
-  var selectedAnswer = $(".answer.btn-primary").text()[0]; 
+  var selectedAnswer = $(".answer.btn-primary").text()[0];
   if (selectedAnswer == rightAnswer) {
     $(".answer.btn-primary").removeClass("btn-primary");
     $(".answer.btn-default").removeClass("btn-default");
@@ -95,7 +95,7 @@ function selectAnswer(id) {
 }
 function deselectAnswer(id) {
   $(id).addClass("btn-default");
-  $(id).removeClass("btn-primary");  
+  $(id).removeClass("btn-primary");
 }
 
 function showEnd() {

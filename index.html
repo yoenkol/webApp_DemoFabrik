@@ -221,69 +221,69 @@
         </div>
 
         <!-- Quiz -->
-<div class="modal fade" role="dialog" tabindex="-1" id="modalQuiz">
-    <div class="modal-dialog modal-lg " role="document" id="modQuiz">
-        <div class="modal-content" id="modQuiz">
-            <div class="modal-header">
-                <h4 class="modal-title">Quiz</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body" id="modalbdQuiz">
-                <div id="start_screen" class="jumbotron quiz_start">
-                    <h1>Herzlich Willkommen!</h1>
-                    <p><button id="startbtn" class="start btn btn-primary btn-lg" role="button">Jetzt starten</button></p>
-                    <a href="index.html" data-wa-link="nav_sign up dropdown" class="js-auth-slider-toggle--signup btn btn-primary" style="color: white;">
-                        <i class="fa fa-home visible"></i> Zurück zur Homepage
-                    </a>
-                </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modalQuiz">
+            <div class="modal-dialog modal-lg " role="document" id="modQuiz">
+                <div class="modal-content" id="modQuiz">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Quiz</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body" id="modalbdQuiz">
+                        <div id="start_screen" class="jumbotron quiz_start">
+                            <h1>Herzlich Willkommen!</h1>
+                            <p><button id="startbtn" class="start btn btn-primary btn-lg" role="button">Jetzt starten</button></p>
+                            <a href="index.html" data-wa-link="nav_sign up dropdown" class="js-auth-slider-toggle--signup btn btn-primary" style="color: white;">
+                                <i class="fa fa-home visible"></i> Zurück zur Homepage
+                            </a>
+                        </div>
 
-                <div id="question" class="jumbotron" hidden>
-                    <h2>Frage <span id="qno"></span></h2>
-                    <p id="question_text">...?</p>
-                    <div class="row top-buffer">
-                        <div class="col-md-6">
-                            <p><button id="answer_a_btn" class="answer btn btn-default btn-lg btn-flex" role="button">A: <span id="answer_a">!</span></button></p>
+                        <div id="question" class="jumbotron" hidden>
+                            <h2>Frage <span id="qno"></span></h2>
+                            <p id="question_text">...?</p>
+                            <div class="row top-buffer">
+                                <div class="col-md-6">
+                                    <p><button id="answer_a_btn" class="answer btn btn-default btn-lg btn-flex" role="button">A: <span id="answer_a">!</span></button></p>
+                                </div>
+                            </div>
+                            <div class="row top-buffer">
+                                <div class="col-md-6">
+                                    <p><button id="answer_b_btn" class="answer btn btn-default btn-lg btn-flex" role="button">B: <span id="answer_b">?</span></button></p>
+                                </div>
+                            </div>
+                            <div class="row top-buffer">
+                                <div class="col-md-6">
+                                    <p><button id="answer_c_btn" class="answer btn btn-default btn-lg btn-flex" role="button">C: <span id="answer_c">.</span></button></p>
+                                </div>
+                            </div>
+                            <div class="row top-buffer">
+                                <div class="col-md-6">
+                                    <p><button id="answer_d_btn" class="answer btn btn-default btn-lg btn-flex" role="button">D: <span id="answer_d">;</span></button></p>
+                                </div>
+                            </div>
+                            <div class="row top-buffer">
+                                <div class="col-md-10 col-lg-10" align="right">
+                                    <p><button id="answer_commit_btn" class="btn btn-primary btn-lg btn-flex" role="button"><span id="commit_text">Antworten</span></button></p>
+                                    <p><button id="continue_btn" class="btn btn-primary btn-lg btn-flex" role="button"><span id="commit_text">Weiter</span></button></p>
+                                </div>
+                                <div class="col-md-2">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row top-buffer">
-                        <div class="col-md-6">
-                            <p><button id="answer_b_btn" class="answer btn btn-default btn-lg btn-flex" role="button">B: <span id="answer_b">?</span></button></p>
-                        </div>
-                    </div>
-                    <div class="row top-buffer">
-                        <div class="col-md-6">
-                            <p><button id="answer_c_btn" class="answer btn btn-default btn-lg btn-flex" role="button">C: <span id="answer_c">.</span></button></p>
-                        </div>
-                    </div>
-                    <div class="row top-buffer">
-                        <div class="col-md-6">
-                            <p><button id="answer_d_btn" class="answer btn btn-default btn-lg btn-flex" role="button">D: <span id="answer_d">;</span></button></p>
-                        </div>
-                    </div>
-                    <div class="row top-buffer">
-                        <div class="col-md-10 col-lg-10" align="right">
-                             <p><button id="answer_commit_btn" class="btn btn-primary btn-lg btn-flex" role="button"><span id="commit_text">Antworten</span></button></p>
-                            <p><button id="continue_btn" class="btn btn-primary btn-lg btn-flex" role="button"><span id="commit_text">Weiter</span></button></p>
-                        </div>
-                        <div class="col-md-2">
-                        </div>
-                    </div>
-                </div>
 
-                <div id="over" class="jumbotron quiz_end" hidden>
-                    <h1>Quiz Vorbei!</h1>
-                    <p>Dein Punktestand ist: <span id="endpoints">0</span> von <span id="possiblepoints">0</span></p>
-                    <p><button  class="restart btn btn-primary btn-lg" role="button" >Nochmal starten</button></p>
-                    <a href="index.html" data-wa-link="nav_sign up dropdown" class="js-auth-slider-toggle--signup btn btn-primary" style="color: white;">
-                        <i class="fa fa-home visible"></i> Zurück zur Homepage
-                    </a>
+                        <div id="over" class="jumbotron quiz_end" hidden>
+                            <h1>Quiz Vorbei!</h1>
+                            <p>Dein Punktestand ist: <span id="endpoints">0</span> von <span id="possiblepoints">0</span></p>
+                            <p><button class="restart btn btn-primary btn-lg" role="button">Nochmal starten</button></p>
+                            <a href="index.html" data-wa-link="nav_sign up dropdown" class="js-auth-slider-toggle--signup btn btn-primary" style="color: white;">
+                                <i class="fa fa-home visible"></i> Zurück zur Homepage
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-       </div>
-    </div>
-</div>
+        </div>
 
 
         <div class="container-fluid" id="container-icon">
