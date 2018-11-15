@@ -15,7 +15,19 @@ function validateForm() {
             return false;
         }
     }
-    
+    var subject = document.getElementById('subject').value;
+    if (subject == "") {
+        document.getElementById('status').innerHTML = '<span style="color:#FF0000" padding="100px"> Betreff ist ein Pflichtfeld </span>';
+        return false;
+    }
+    var message = document.getElementById('message').value;
+    if (message == "") {
+        document.getElementById('status').innerHTML = '<span style="color:#FF0000" padding="100px"> Nachricht ist ein Pflichtfeld </span>';
+        return false;
+    }
+
+    document.getElementById('status').value = "Sendet...";
+    document.getElementById('contact-form').submit();
 }
 
 document.getElementById("login").addEventListener("click", function(){
