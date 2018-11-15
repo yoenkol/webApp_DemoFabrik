@@ -1,6 +1,5 @@
 var turn=0;
 
-
 $(function() {
   //Hauptfunktion
 });
@@ -57,9 +56,9 @@ $("#answer_commit_btn").click(function() {
 $(".restart").click(function() {
   $(".quiz_end").fadeOut(function() {
     startQuiz();
-    document.getElementById("answer_commit_btn").removeAttribute("display");
   });
 });
+
 function validateAnswer() {
   $("#answer_commit_btn").hide();
   var rightAnswer = getRightAnswer();
@@ -78,7 +77,6 @@ function validateAnswer() {
   $("#continue_btn").show();
 }
 
-
 $("#continue_btn").click(function() {
 if(currentQuestionNo==9){
     showEnd();
@@ -89,10 +87,12 @@ currentQuestionNo++;
   $("#continue_btn").hide();
   $("#answer_commit_btn").show();
 });
+
 function selectAnswer(id) {
   $(id).addClass("btn-primary");
   $(id).removeClass("btn-default");
 }
+
 function deselectAnswer(id) {
   $(id).addClass("btn-default");
   $(id).removeClass("btn-primary");

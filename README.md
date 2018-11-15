@@ -7,3 +7,11 @@ Sobald den Server startet, erscheint ein Fenster und in dem man Apache Server st
 
 Ausführung:
 Staten der Webseite durch öffnen der index.html Datei.
+
+Anmeldung:
+Für die Anmeldung benötigst du diese Daten:
+
+    username: "Dennis",
+    password: "Hallo"
+.
+Das Sign up Formular beinhaltet derZeit keine Funktionalität.
