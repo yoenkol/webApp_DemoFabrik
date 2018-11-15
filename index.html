@@ -220,6 +220,74 @@
             </div>
         </div>
 
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Kontaktformular</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <section class="section">
+    
+                            <h2 class="h1-responsive font-weight-bold text-center my-5">Kontaktieren Sie uns.</h2>
+                            <p class="text-center w-responsive mx-auto mb-5">Haben Sie Fragen an uns oder möchten eine LiveDemo erhalten , so senden Sie uns eine Nachricht mit Ihrem Anliegen.</p>
+    
+                            <div class="row">
+                                <div class="col-md-9 mb-md-0 mb-5">
+                                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                                        
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="md-form mb-0">
+                                                    <input type="text" id="name" name="name" class="form-control">
+                                                    <label for="name" class="">Ihr Name</label>
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-md-6">
+                                                <div class="md-form mb-0">
+                                                    <input type="text" id="email" name="email" class="form-control">
+                                                    <label for="email" class="">Ihre Email</label>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="md-form mb-0">
+                                                    <input type="text" id="subject" name="subject" class="form-control">
+                                                    <label for="subject" class="">Betreff</label>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="md-form">
+                                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                                    <label for="message">Ihre Nachricht</label>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </form>
+    
+                                    <div class="text-center text-md-left">
+                                        <a class="btn btn-primary" onclick="validateForm()" style="color: white;">Senden</a>
+                                    </div>
+                                    <div id="status"></div>
+                                </div>
+    
+                                
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    
+
         <!-- Quiz -->
         <div class="modal fade" role="dialog" tabindex="-1" id="modalQuiz">
             <div class="modal-dialog modal-lg " role="document" id="modQuiz">
